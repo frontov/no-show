@@ -34,7 +34,7 @@ export default {
   /*border: 0;*/
 }
 .wrapper {
-  min-height: 75vh;
+  min-height: 80vh;
 
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
