@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-main-wrapper msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import vMainWrapper from './components/v-main-wrapper.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    vMainWrapper
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
+  margin: 0;
+  padding: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: aliceblue;
+  height: 100%;
+
+}
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+a{
+  text-decoration: none;
+  font-family:Helvetica
+
+}
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: wheat;
+}
+
+/* mouse over link */
+a:hover {
+  color: snow;
+}
+
+/* selected link */
+a:active {
+  color: salmon;
 }
 </style>
